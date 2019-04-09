@@ -1,0 +1,36 @@
+.extern
+{
+    height: 100vh;
+    background: #DCDCDC;
+
+}
+
+.objetTop
+{
+    position: absolute;
+    top: 15px;
+}
+
+.inputColor
+{
+    border-radius: 5px;
+    height: 37px;
+}
+
+.outils
+{
+    margin-top: 200px;
+    margin-left: 97px;
+}
+
+.button
+{
+    position: absolute;
+    top: 850px;
+    left: 60px;
+}
+
+.intern
+{
+    border-right: 5px solid grey;
+}

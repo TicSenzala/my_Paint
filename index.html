@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My_paint</title>
+</head>
+<body>
+    <div class="extern">
+        <div class="col-2 offset-10 objetTop">
+            <div class="form-inline float-right">
+                <h6 class="ml-5">Épaisseur :</h6>
+                <select class="btn btn-light p-2 ml-1" id="weight">
+                    <option value="1">1</option>
+                    <option value="2">3</option>
+                    <option value="3">5</option>
+                    <option value="4">7</option>
+                    <option value="5">9</option>
+                    <option value="20">20</option>
+                </select>
+                <input type="color" class="bg-light inputColor ml-1">
+            </div>
+            <div class="outils">
+                <h6 class="font-weight-bold">Outils :</h6>
+                <hr>
+                <div>
+                    <button class="btn btn-light mt-2 pencil"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-light mt-2 line "><i class="fas fa-slash"></i></button>
+                </div>
+                <div>
+                </div>
+                <div>
+                    <button class="btn btn-light mt-2 rectangle"><img src="vide.png" alt="rectangle vide"  width="20"></i></button>
+                    <button class="btn btn-light mt-2 circle"><i class="far fa-circle"  width="20"></i></button>
+                </div>
+                <div class="diff-rectangle">
+                    <button class="btn btn-light mt-2 rectV p-2"><img src="vide.png" alt="rectangle vide"  width="20"></button>
+                    <button class="btn btn-light mt-2 rectP p-2"><img src="rectangle.png" alt="rectangle plein"  width="20"></button>
+                </div>
+                <div>
+                </div>
+                <div class="diff-circle">
+                    <button class="btn btn-light mt-2 circleV p-2"><img src="oval.png" alt="cercle vide"  width="20"></button>
+                    <button class="btn btn-light mt-2 circleP p-2"><img src="circleP.png" alt="cercle plein"  width="20"></button>
+                </div>
+                <div>
+                    <button class="btn btn-light mt-2 eraser"><i class="fas fa-eraser"></i></button>
+                    <button class="btn btn-light mt-2 triangle"><img src="triangle.png" alt="triangle icon" width="20"></button>
+                </div>
+        </div>
+            <div class="form-inline mt-3 button">
+                <a href="index.html" class="btn btn-light">Clear</a>
+                <a href="" download="myProject.png" class="save btn btn-light ml-2" onclick="download_img(this);">Save</a>
+                <label for="open" class="btn btn-light ml-2">Open</label>
+                <input type="file" class="ml-2" hidden="hidden" value="Open" id="open">
+            </div>
+        </div>
+        <canvas id="Canvas" class="intern bg-white" width="1600" height="947"><img hidden="hidden" class="imgOpen" alt="Projet" src=""></canvas>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
